@@ -1,0 +1,313 @@
+//CSS预编译文件基于Sass语法
+//这是Zoomla!逐浪CMS团队优化的Sass模板，我们为你预置了逐浪字库官方团队的高品质webFont之CDN库，你可完全采用中文定义写作，如下面写法都是合格
+//$中国变量之一:12px;
+//$中国人民中华人民共和国变量之二:#ff0;
+//.a1{width:$中国变量之一 ;}
+//.a2{background: $中国人民中华人民共和国变量之二;}
+//建议CSS注释写在代码段的起始处以使阅读更加流畅
+
+/* 全局样式定义 Powered by Zoomla!逐浪CMS z01.com*/
+@charset "utf-8";
+@import "zoomlaCMS";
+// @import url("https://code.z01.com/Zfonts.css");
+
+//body{background-color: #00aa00 !important;}
+
+$V8欢迎高度:72vh;
+
+a:hover{text-decoration: none; color: currentColor;}
+.margintop10 {margin-top: 10px;}
+.relative { position:relative;}
+.padding15 { padding-left:15px; padding-right:15px;}
+.padding10{ padding-left:10px; padding-right:10px;}
+.padding5{ padding-left:5px; padding-right:5px;}
+.div_h35 { height:35px;}
+.loginNone{display:none;}
+.margin_top20 { margin-top:20px;}
+.margin_bottom20 { margin-bottom:20px;}
+.padding0_lg { padding-left:0; padding-right:0;}
+.list-group-item {padding:.5rem 1.2rem;}
+.panel-title span a { font-size:0.8rem;}
+.list-group-item {padding:.5rem 0.5rem}
+.list-item a { color:#666;}
+/*内容页的图片可定义响应式且带颜色边框方法是 .content img {max-width: 98%;border: inset;}*/
+
+
+/*底圆颜色*/
+#css2 {fill:#1d2088;}
+/*logo大圆svg颜色*/
+.cls-1{fill:#fff;}
+/*logo大标题svg颜色*/
+.cls-2{fill:#900;}
+
+
+//首页侧bar
+.homeNavBar{width:3.8rem;text-align: center;
+a{display: block; width: 3rem;line-height: 3rem; color: #fff;}
+}
+
+/*nav_toggler专用于抽屉菜单 */
+#wrapper { padding-right: 0; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;}
+#wrapper.toggled { padding-right: 380px;cursor: url("assets/close.png"), pointer; }
+#sidebar-wrapper { z-index: 1000; position: fixed; right: 380px; width: 0; height: 100%; margin-right: -380px; overflow-y: hidden; background: #222; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
+#wrapper.toggled #sidebar-wrapper { width: 380px; }
+#page-content-wrapper { width: 100%; position: absolute; padding: 15px; }
+#wrapper.toggled #page-content-wrapper { position: absolute; margin-right: -380px; }
+.sidebar-nav { margin-left: 2rem;@include myul;text-align: center;
+li{ position: relative;float: left;margin-top: 5px; margin-left: 2%; width: 26%;height: 5.2rem; overflow: hidden;}
+li img{width: 100%;}
+li span{display: block;position: absolute;bottom: 0; left: 0; width: 100%;height: 1rem; line-height: 1rem; background: rgba(204,204,204,.6);font-size: 0.68rem;pointer-events: none;}
+li:hover span{top:0;height: 5.2rem;line-height: 5.2rem; background: rgba(244,249,43,0.8); }
+i{display: block;margin: auto;font-size: 4rem;}
+}
+
+
+
+#sidebar-wrapper{ color: #788487;
+h6{display: block; margin: auto; width: 6rem;line-height:6rem; font-size: 4rem; border: 1px solid #ccc;color: #fff;text-align: center;}
+h6 i{color: #fff;}
+p{margin-top: 1rem; text-align: center; font-size: 0.8rem;}
+}
+.sidebar_close{ padding-right:1rem;height: 5.0rem;  line-height:5.0rem;text-align: right; font-size: 1.3rem;
+a{display: inline-block; width: 5rem;text-align: center;}
+}
+
+.sidebar_ico{float: right;width: 380px;line-height: 3rem; text-align:  center;}
+
+
+
+
+#home_nav {position:absolute;top:0; width:100%;z-index:1;}
+
+.home_top_nav{font-size:1.12rem;}
+
+.home_search {position: absolute;	transition: ease-in-out 0.5s;opacity: 0;right: -1em;z-index: -1;
+	form {border: 1px solid #fff;}
+	form i {	margin-left: 1rem;margin-right: 1rem;color: #fff;}
+	input {	display: inline-block;border: none;background: none;box-shadow: none;padding-left: 0;padding-right: 0;width: 30em;border-radius: 0;	color: #fff;}
+	a {background: none;border: none;color: #fff;cursor: pointer;}
+}
+
+
+header{position: fixed;width: 100%; height: 8rem;    transition: height .3s ease-out, background .3s ease-out, box-shadow .3s ease-out;  -webkit-transform: translate3d(0, 0, 0);  transform: translate3d(0, 0, 0);z-index: 1;
+.navbar-brand img{width: 10rem;}
+}
+
+.well{ height:$V8欢迎高度; background: #505cfd;
+// .carousel-item{width: 100%;height: 72vh;}
+}
+
+//首页图片轮播
+.icarousel{height: $V8欢迎高度;
+.carousel-caption {bottom: 28%;z-index: 1;position: absolute;}
+.carousel_photo1{height: $V8欢迎高度;background:url(assets/well_slogan1.jpg) no-repeat center top ;background-size: cover;opacity: 0.3;}
+.carousel_photo2{height: $V8欢迎高度;background:url(assets/well_slogan2.jpg) no-repeat center right;background-size: cover;opacity: 0.3;}
+.carousel_photo3{height: $V8欢迎高度;background:url(assets/well_slogan3.jpg) no-repeat center;background-size: cover;opacity: 0.3;}
+.carousel_photo1>a{display: block;width: 100%;height: 100%;}
+.carousel_photo2>a{display: block;width: 100%;height: 100%;}
+.carousel_photo3>a{display: block;width: 100%;height: 100%;}
+h1{font-family: "ZoomlaXSongExtraLight",Microsoft YaHei UI light;font-size: 3.2rem;}
+p{font-family: "ZoomlaXSongExtraLight",Microsoft YaHei UI light;font-size: 1.28rem}
+.carousel-control-prev,.carousel-control-next{z-index: 0;}
+}
+
+//首页圆按钮
+.btn-circle{ display: inline-block; width: 10rem; height: 3.3rem; line-height: 3.3rem; background: none; color: #fff; text-align: center;  border: 1px solid #e0e0e0;  border-radius: 100px; border: 1px solid #fff;
+&:hover{ background: #fff;color: #212529;}
+}
+
+//首页安装代码
+.well_ins{
+ul{@include myul;}
+li{padding-left: 1rem;}
+li a{line-height:4rem; color: #000;font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;}
+li a:hover{border-bottom: 1px solid #000;}
+}
+
+.webll_gradient{position: absolute;width: 100%;height: $V8欢迎高度; background: linear-gradient(to left, #00dbde, #a1a28b);/*background: linear-gradient(to left, #00dbde, #0516fb);*/ opacity: 0.8;}
+
+//首页八大块
+.home_slogin{text-align:center; }
+
+.home_slogin_c {margin-bottom:0.6rem; padding-bottom:0.4em;  background:rgba(86, 155, 145, 0.92); color:#fff; box-shadow:0 0 5px rgba(0,0,0,0.6);
+h3 {padding-top:1rem;margin-bottom: 0; font-size: 1.18rem;}
+p {  margin-bottom: 0.2rem;font-size:0.8em; text-justify:inter-ideograph; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;  }
+}
+
+
+//首页最新资讯块
+.home_news{margin-top: 2rem;margin-bottom: 2rem; border-top:1px solid #f0f0f0;
+ul{@include myul;margin-top: 0.2rem;}
+}
+
+.home_news li { position: relative; float: left; height: 20rem;; overflow: hidden; text-align: center;border: 1px solid transparent;transition: 400ms; }
+.home_news li:hover {background:white;border:1px solid #ccc;}
+.home_news .t1 {padding-top: 4.5rem;  width: 100%; height: 8rem; font-size: 0.9rem; color: #9b9797; transition: 400ms; }
+.home_news .t1 .img-auto { height:7rem;overflow:hidden; }
+.home_news .t1 a {line-height: 2rem; font-size: 0.98rem; color: #3a3a3a; transition: 400ms; }
+.home_news .t2 {position: absolute;padding-top: 0.5rem; width: 100%; height: 6rem; line-height: 1.3rem;left: 0; bottom: -6rem;text-align: center;font-size: 0.85rem; color: #fff; background: #63a299; transition: 400ms; }
+.home_news .t2 p{margin-bottom: 0!important}
+.home_news li:hover .t1 { margin-top:-4rem; }
+.home_news li:hover .t2 { bottom:0; }
+
+//左切换动画与zico的more按钮
+.home_newsMore{display: inline-block;position: relative; margin-top: 0.2rem; width: 8rem; height: 1.86rem; line-height: 1.86rem; text-align: center; color: #888; background: #fff; box-shadow: 0 0 10px rgba(12,3,6,.13); z-index: 1; 
+&:before{position: absolute; left: 0; top: 0;transition: ease-out .35s; content: ''; width: 0; height: 100%; background: #AC1722;  z-index: -1;}
+i:after { transition: ease-in .65s; content: ''; display: block; width: 0; height: 100%; background: #fff; position: absolute; left: 0; top: 0; z-index: -1; }
+i { position: relative; float: right; width: 2.2rem; height: 1.86rem; background: #AC1722; color: #fff; transition: ease .65s; z-index: 1; }
+&:hover {color: #fff;}
+&:hover i:after{width: 100%; transition-delay: .2s; transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);}
+&:hover:before{width: 100%;}
+&:hover i{color: #AC1722;transition-delay: .2s;}
+}
+
+//首页功能介绍
+.home_elit { margin-top: 3.2rem; min-height: 20rem; background: url(assets/cross_1.png) no-repeat center bottom; background-size: 100%;
+h3 {font-weight: 100;font-size: 1.5rem;color: #222;	}
+p {color: #676767;}
+}
+
+//首页八小块
+.home_quict {padding-top: 5rem; background: $标题浅蓝; text-align: center;
+a{display: block;border-radius: 10px;height: 7rem;}
+a:hover{opacity: 0.8;}
+i{padding-top: 1rem; color: #fff;font-size: 5rem;}
+}
+.home_quict_l .row div:nth-child(4n+1) i{ color:#E66619;}
+.home_quict_l .row div:nth-child(4n+2) i{ color:#ECB312;}
+.home_quict_l .row div:nth-child(4n+3) i{ color:#3B8ED8;}
+.home_quict_l .row div:nth-child(4n+4) i{ color:#CD345B;}
+.home_quict_r .row div:nth-child(4n+1) i{ color:#FF890F;}
+.home_quict_r .row div:nth-child(4n+2) i{ color:#9157C8;}
+.home_quict_r .row div:nth-child(4n+3) i{ color:#3B8ED8;}
+.home_quict_r .row div:nth-child(4n+4) i{ color:#CD335C;}
+
+//首页应用商店
+.home_store{position: relative; padding-top:6rem; padding-bottom:2rem; background: url(assets/bg.jpg) no-repeat center;  background-size: cover;}
+.home_storeMask{ position: absolute;top: 0; width: 100%; height: 100%; background: rgba(51,153,255,0.78);}
+
+.e-bx_banner {	width: 242px;height: 242px;overflow: hidden;position: relative;background:rgba(212, 218, 213, 0.5);border-radius: 12px;
+ul{ margin-top: 1rem; list-style: none;}
+li {line-height: 2.2rem;}
+a {color: #fff;}
+}
+
+
+
+//首页社区
+.home_club {margin-top: 2em;}
+.home_club_m {line-height: 1.65rem;height: 1.65rem;font-size: 0.8rem;}
+
+footer{padding-top: 4rem; min-height: 20rem; color: #fff;background:rgba(34, 34, 34, 0.6);font-size: 0.85rem; color: #ccc;
+a{color: currentColor;}
+h5{margin-bottom: 1rem; font-size: 1.02rem;color: #fff; font-weight: 900;}
+li{line-height: 1.6rem;}
+}
+
+.foot_l{
+p{ margin-bottom:0.4rem; width: 80%;}
+.btn{margin-bottom: 0.4rem;}
+i{ margin-right: 0.3rem; font-size: 1.2rem;}
+}
+
+.footShow{
+ul{@include myul;}
+li{margin-top: 0.2rem; float: left; width:24%; height: 3.6rem; text-align: center;}
+li img{width: 90%;}
+a:hover{opacity: .5;}
+}
+
+.copyright{border-top:1px solid #788; line-height: 3.2rem; text-align: center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*769-1930分辨率之间传统低分屏幕优化*/
+@media only screen and (min-width: 769px) and (max-width: 1930px) {
+
+}
+
+ /*小于768px手机优化*/
+@media screen and (max-width:768px){
+.container{max-width: 100%;}
+
+.zMobile{display:none;}
+
+.home_login{
+li .zi{font-size: 2rem;}
+li p{oadding-left:0;padding-right:0;margin-bottom:0;font-size:0.8rem;}
+h2{display: initial;padding-top:0;margin-bottom:0;font-size:1rem;}
+}
+
+.navbar{
+li{text-align:center;}
+.navbar-toggler{z-index: 1;}
+}
+
+.navbar .show{position: absolute; top: 0; left: 0; width: 100vw;height: 100vh;background:rgb(142, 154, 187);transition: all 0.5s ease;
+ul{padding-top: 10%;}
+}
+
+.homeNavBar{display: none;}
+
+.home_login{
+ul{display: inherit;}
+li{width: 100%;height: 20vh;}
+.myAnnoun{ min-height:800px;}
+}
+
+#scolls { position: static; top: 0; z-index: 999; background: #f8f8f8; border: 1px solid #e7e7e7; width: 100%; }
+#TopNavBar {padding-top: 0;}
+.myAnnoun h1 {height: auto;padding-top: 0.2em;}
+.home_bg {background: none;}
+.loginNone {display: block;}
+
+
+#page_logo {padding-top: 0;}
+.bic_more {width: 100px;overflow: hidden;}
+.video_img li {width: 100%;list-style: none;}
+.shop_img li {width: 96%;}
+.home_footer {margin-bottom: 83px;
+li {width: 30%;}
+}
+
+.bic_left {width: 100%;overflow: hidden;
+.page_main_icon {float: left;width: 49%;}
+}
+
+#fudong {display: none;}
+.padding0_lg {padding-left: 15px;padding-right: 15px;}
+.news_elite li,.news_elite li:first-child {width: 50%;}
+#botM_dh a{width: 48%; }
+
+.well,.webll_gradient{height: 100vh;}
+
+.icarousel{height: 100vh;
+.carousel-caption {bottom: 28%;}
+.carousel_photo1,.carousel_photo2,.carousel_photo3{height: 100vh;}
+p{font-size:1rem;}
+h1{font-size:2.1rem;}
+}
+
+.well_ins li {width: 50%;text-align: center;}
+
+.newsList_r a{margin-left: -0.5rem;}
+
+}
+
+.myContent{color: #999;}
+
+
+
+
+
+/*key:UG93ZXJlZCBieSBab29tbGEh6YCQ5rWqQ01TIHd3d3cuejAxLmNvbQ== */
