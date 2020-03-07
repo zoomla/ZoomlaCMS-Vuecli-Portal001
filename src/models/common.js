@@ -2,7 +2,7 @@ exports.install = function(Vue,options){
 // 参数：method（API名），data（请求参数对象）
   Vue.prototype.jsp = function(action,data){
         //const baseUrl = 'http://win100:90/Cloud/API?appId=SSY5UF6SUK&appKey=sZ2Mx7BvAgEWr7i6JDh4vPLFluMuR4pn&action=';
-        const baseUrl = 'http://demo.z01.com/API/WXAPP?apiId=SSY5UF6SUK&apiKey=sZ2Mx7BvAgEWr7i6JDh4vPLFluMuR4pn&action=';
+        const baseUrl = 'http://win100:90/API/WXAPP?apiId=75e118bc2737690f43b865b6f380dbcd&apiKey=ccc4775b238d788f3f94e0e6b0b76af7&action=';
 
 		let url = baseUrl+action;
         // jsonp请求参数和get方法类似，都是params的方式拼接

@@ -119,11 +119,11 @@
 
 <section class="container">
 <div class="p-2 bg-info">
-	接口在线调试：<a href="http://逐浪CMS部署网址/api/wxapp?action=model_list">http://逐浪CMS部署网址/api/wxapp?action=model_list</a>
+	接口在线调试：<a href="http://win100:90/api/wxapp?action=model_list">http://win100:90/api/wxapp?action=model_list</a>
 	<hr>
-	数据操作后台：	<a href="http://逐浪CMS部署网址/admin/Default">http://逐浪CMS部署网址/admin/Default</a>
+	数据操作后台：	<a href="http://win100:90/admin/Default">http://win100:90/admin/Default</a>
 	<hr>
-	接口文件地址：	逐浪CMS部署目录：\Pages\API\WXAPP.cshtml
+	接口文件地址：	\\win100\d\web\test\WebSite\Pages\API\WXAPP.cshtml
 </div>
 <div class="p-2 border">
 	按模型ID变量输出模型列表 <a href="/#/list/2">/#/list/2</a>

@@ -106,3 +106,4 @@ dist
 ##ignore this file##
 /target/
 .svn
+git自动更新与提交.ps1
