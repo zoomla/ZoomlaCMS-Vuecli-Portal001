@@ -4,7 +4,7 @@
 <!-- TOC -->
 
 - [Zoomla!逐浪CMS卓越出品](#zoomla逐浪cms卓越出品)
-    - [Zoomla-Cli-Studio基于VueJS精品全站项目1号站：基于VueCLI构建的Zoomla!逐浪V4蓝色模板](#zoomla-cli-studio基于vuejs精品全站项目1号站基于vuecli构建的zoomla逐浪v4蓝色模板)
+    - [Zoomla-Cli-Studio基于VueJS精品全站项目1号站：基于VueCLI构建的Zoomla!逐浪V4蓝色风格全站](#zoomla-cli-studio基于vuejs精品全站项目1号站基于vuecli构建的zoomla逐浪v4蓝色风格全站)
     - [本项目介绍](#本项目介绍)
     - [开放性说明](#开放性说明)
     - [服务端配置信息](#服务端配置信息)
@@ -22,7 +22,7 @@
 ![Zoomla!逐浪软件](源码与接口使用说明/logo.svg)
 # Zoomla!逐浪CMS卓越出品
 
-## Zoomla-Cli-Studio基于VueJS精品全站项目1号站：基于VueCLI构建的Zoomla!逐浪V4蓝色模板
+## Zoomla-Cli-Studio基于VueJS精品全站项目1号站：基于VueCLI构建的Zoomla!逐浪V4蓝色风格全站
 
 Zoomla!逐浪CMS：中文业界alexa排名第一的CMS系统|专注.net与windows平台企业级研发，集成内容管理、webfont、商城、店铺、黄页、教育、考试、3D、三维全景、混合现实、CRM、ERP、OA、论坛、贴吧等为一体，打造国内高端的CMS产品典范。
 
